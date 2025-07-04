@@ -1,0 +1,8 @@
+default_install_hook_types: [commit-msg, pre-commit, pre-push]
+default_stages:
+  - "pre-commit"
+repos:
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: "v1.99.4"
+    hooks:
+      - id: terraform_trivy
